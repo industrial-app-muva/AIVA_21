@@ -1,0 +1,14 @@
+version: '3.2'
+
+networks:
+    default_net:
+
+services:
+    flask-app:
+        build: .
+        container_name: flask-api
+        ports:
+            - "80:80"
+        restart: always
+        networks:
+            - default_net
