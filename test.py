@@ -1,21 +1,26 @@
 import unittest
+import requests
 
 class TestAPI(unittest.TestCase):
+    def test_constructor(self):
+        pass
 
-    def test_
+    def test_process_img(self):
+        pass
 
-    def test_upper(self):
-        self.assertEqual('foo'.upper(), 'FOO')
+class TestDetector(unittest.TestCase):
+    def test_constructor(self):
+        pass
 
-    def test_isupper(self):
-        self.assertTrue('FOO'.isupper())
-        self.assertFalse('Foo'.isupper())
+    def test_detect(self):
+        pass
 
-    def test_split(self):
-        s = 'hello world'
-        self.assertEqual(s.split(), ['hello', 'world'])
-        with self.assertRaises(TypeError):
-            s.split(2)
+class TestApp(unittest.TestCase):
+    def test_hello_world(self):
+        pass
+
+    def test_process_img(self):
+        pass
 
 if __name__ == '__main__':
     unittest.main()
