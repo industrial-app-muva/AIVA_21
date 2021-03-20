@@ -6,7 +6,7 @@ networks:
 services:
     flask-app:
         build: .
-        container_name: flask-api
+        container_name: flask-app
         ports:
             - "80:80"
         restart: always
