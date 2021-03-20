@@ -1,8 +1,7 @@
 import unittest
 
-class TestAPI(unittest.TestCase):
 
-    def test_
+class TestAPI(unittest.TestCase):
 
     def test_upper(self):
         self.assertEqual('foo'.upper(), 'FOO')
@@ -16,6 +15,7 @@ class TestAPI(unittest.TestCase):
         self.assertEqual(s.split(), ['hello', 'world'])
         with self.assertRaises(TypeError):
             s.split(2)
+
 
 if __name__ == '__main__':
     unittest.main()

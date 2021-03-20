@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capacitor Detector</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <h1>Upload new Image File</h1>
+    <form method=post enctype=multipart/form-data action="{{ url_for('process_img_gui') }}">
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+    <p>{{ error }}</p>
+</body>
+</html>

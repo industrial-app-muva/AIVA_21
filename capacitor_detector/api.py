@@ -1,4 +1,5 @@
-from detector import CapacitorDetector
+from capacitor_detector.detector import CapacitorDetector
+
 
 class CapacitorDetectorAPI:
     def __init__(self):
@@ -6,5 +7,3 @@ class CapacitorDetectorAPI:
 
     def process_img(self, img):
         return self.detector.detect(img)
-
-    
