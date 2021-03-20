@@ -22,5 +22,6 @@ class TestApp(unittest.TestCase):
     def test_process_img(self):
         pass
 
+
 if __name__ == '__main__':
     unittest.main()
