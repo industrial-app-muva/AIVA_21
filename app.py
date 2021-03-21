@@ -92,8 +92,8 @@ def process_img_gui():
         im_input = parse_file_storage_2_numpy(file)
         im_output, _ = api.process_img(im_input)
 
-        im_input_uri = np_array_2_uri(im_input)
-        im_output_uri = np_array_2_uri(im_output)
+        im_input_uri = np_array_2_uri(cv.cvtColor(im_input, cv.COLOR_BGR2RGB))
+        im_output_uri = np_array_2_uri(cv.cvtColor(im_output, cv.COLOR_BGR2RGB))
 
         return render_template('result.html', im_input=im_input_uri, im_output=im_output_uri)
 

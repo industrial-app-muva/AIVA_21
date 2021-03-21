@@ -6,17 +6,23 @@ Este proyecto está dedicado al diseño, implementación y despliegue del sistem
 
 Con el siguiente comando la aplicación web y la API REST estarán disponibles en el puerto 80 de la máquina donde se esté ejecutando:
 
-`` python app.py ``
+````shell 
+python app.py
+````
 
 Para acceder a la aplicación web basta con iniciar el navegador e introducir la siguiente URL:
 
-`` http://localhost:80 ``
+````shell
+http://<ip host>:80
+````
 
 ## API REST
 
-La URL requerida para solicitar el reconocimiento sobre una imagen comunicandose exclusivamente con la API REST es la siguiente:
+La URL requerida para solicitar el reconocimiento sobre una imagen comunicándose exclusivamente con la API REST es la siguiente:
 
-`` http://localhost:80/process_img ``
+````shell 
+http://<ip host>:80/process_img 
+````
 
 Es necesario que la petición sea un método POST y la imagen debe ir adjuntada en la petición como un fichero.
 
