@@ -22,11 +22,9 @@ class CapacitorDetector:
             template = cv.imread(f'{TEMPLATES_PATH}/{template_file}', 1)
             h, w = template.shape[0], template.shape[1]
         
-            # Apply template Matching
             res = cv.matchTemplate(img, template, method)
             min_val, max_val, min_loc, max_loc = cv.minMaxLoc(res)
 
-            # print(max_val)
             if max_val > threshold:
                 top_left = max_loc
             
@@ -34,7 +32,5 @@ class CapacitorDetector:
                 cv.rectangle(result_img, top_left, bottom_right, 255, 2)
             
                 b_boxes.append([*top_left, w, h])
-        
-            # TODO: Filter Non-Maxima supression
 
         return result_img, b_boxes

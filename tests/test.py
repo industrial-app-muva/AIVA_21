@@ -83,7 +83,3 @@ class TestAPI(unittest.TestCase):
         self.assertGreaterEqual(len(bboxs), 20)
 
         print(f'Completed {sys._getframe(  ).f_code.co_name}!')
-
-
-if __name__ == '__main__':
-    unittest.main()
