@@ -19,3 +19,11 @@ La URL requerida para solicitar el reconocimiento sobre una imagen comunicandose
 `` http://localhost:80/process_img ``
 
 Es necesario que la petición sea un método POST y la imagen debe ir adjuntada en la petición como un fichero.
+
+## Docker
+
+El sistema se puede desplegar mediante Docker y docker-compose con el siguiente comando:
+
+`` docker-compose up ``
+
+**Todos los comandos se deben ejecutar desde la carpeta raiz del proyecto.**
