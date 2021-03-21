@@ -17,10 +17,10 @@ class CapacitorDetector:
     def __load_templates():
         return os.listdir(TEMPLATES_PATH)
 
-    def __process_image(self, img, template, method=cv.TM_CCOEFF_NORMED, threshold=0.9):
+    def __process_image(self, img, template, method=cv.TM_CCOEFF_NORMED, threshold=0.7):
         h, w = template.shape[0], template.shape[1]
     
-        res = cv.matchTemplate(img, template, method)
+        res = cv.v(img, template, method)
         min_val, max_val, min_loc, max_loc = cv.minMaxLoc(res)
 
         if max_val > threshold:
