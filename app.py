@@ -90,10 +90,10 @@ def process_img_gui():
 
     if file and allowed_file(file.filename):
         im_input = parse_file_storage_2_numpy(file)
-        # im_output, _ = api.process_img(im_input) # TODO: uncomment when finnish
+        im_output, _ = api.process_img(im_input) # TODO: finish detector
 
         im_input_uri = np_array_2_uri(im_input)
-        im_output_uri = np_array_2_uri(im_input)  # TODO: change for im_output
+        im_output_uri = np_array_2_uri(im_output)  # TODO: change for im_output
 
         return render_template('result.html', im_input=im_input_uri, im_output=im_output_uri)
 
