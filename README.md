@@ -1,6 +1,9 @@
+
 # Capacitor Detector
 
-Este proyecto está dedicado al diseño, implementación y despliegue del sistema Capacitor Detector. Este proyecto tiene como objetivo implementar un sistema capaz de reconocer condensadores situados en una placa base dentro de una imagen.
+Este proyecto está dedicado al diseño, implementación y despliegue del sistema Capacitor Detector. Este proyecto tiene como objetivo implementar un sistema capaz de reconocer condensadores situados en una placa base dentro de una imagen. Para ello, se plantea la siguiente configuración de clases y funciones de las mismas.
+
+![Design](https://user-images.githubusercontent.com/35663120/111919386-02154380-8a8a-11eb-83c8-f30feeeb138f.png)
 
 ## Inicio
 
@@ -30,6 +33,6 @@ Es necesario que la petición sea un método POST y la imagen debe ir adjuntada 
 
 El sistema se puede desplegar mediante Docker y docker-compose con el siguiente comando:
 
-`` docker-compose up ``
+`` docker-compose up --build -d``
 
 **Todos los comandos se deben ejecutar desde la carpeta raiz del proyecto.**
