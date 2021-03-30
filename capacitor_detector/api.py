@@ -7,5 +7,5 @@ class CapacitorDetectorAPI:
         self.detector = CapacitorDetector()
 
     def process_img(self, img):
-        motherboard_img = MotherboardExtractor.extract(img)
-        return self.detector.detect(motherboard_img)
+        # motherboard_img = MotherboardExtractor.extract(img)
+        return self.detector.detect(img)

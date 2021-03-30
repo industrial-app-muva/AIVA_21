@@ -4,7 +4,9 @@ import os
 import cv2 as cv
 from tqdm import tqdm
 
-TEMPLATES_PATH = 'C:/Users\europ\PycharmProjects\AIVA_21\capacitor_detector/templates'
+# TODO: cambiar el path
+# TEMPLATES_PATH = 'C:/Users\europ\PycharmProjects\AIVA_21\capacitor_detector/templates'
+TEMPLATES_PATH = 'capacitor_detector/templates'
 
 
 class CapacitorDetector:
@@ -50,6 +52,6 @@ class CapacitorDetector:
             cv.rectangle(result_img,
                          (bbox[0], bbox[1]),
                          (bbox[0] + bbox[3], bbox[1] + bbox[2]),
-                         (0, 0, 255), 3)
+                         (0, 0, 255), 5)
 
         return result_img, b_boxes

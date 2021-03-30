@@ -64,6 +64,7 @@ def process_img():
         return jsonify(error=400, text='Bad request'), 400
 
     file = request.files['file']
+
     # if user does not select file, browser also
     # submit an empty part without filename
     if file.filename == '' or not file or not allowed_file(file.filename):
