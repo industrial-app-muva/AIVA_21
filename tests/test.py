@@ -13,7 +13,7 @@ class TestDetector(unittest.TestCase):
         print(f'Executing {sys._getframe(  ).f_code.co_name}...')
 
         detector = CapacitorDetector()
-        templates = os.listdir('capacitor_detector/templates')
+        templates = os.listdir('../capacitor_detector/templates')
 
         self.assertEqual(len(templates), len(detector.templates))
 

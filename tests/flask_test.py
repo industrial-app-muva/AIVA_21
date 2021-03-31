@@ -29,7 +29,7 @@ class TestApp(unittest.TestCase):
         self.app = app
         self.client = self.app.test_client()
         self.image_name = "rec1-3.jpg"
-        self.image_path = './static/image/rec1-3.jpg'
+        self.image_path = '../static/image/rec1-3.jpg'
         self.img = Image.fromarray(cv2.imread(self.image_path, 1))
 
         print(f'Completed {sys._getframe(  ).f_code.co_name}!')
@@ -52,6 +52,7 @@ class TestApp(unittest.TestCase):
 
         print(f'Completed {sys._getframe(  ).f_code.co_name}!')
 
+    # TODO
     def test_process_img_empty_data(self):
         print(f'Executing {sys._getframe(  ).f_code.co_name}...')
 
@@ -63,6 +64,7 @@ class TestApp(unittest.TestCase):
 
         print(f'Completed {sys._getframe(  ).f_code.co_name}!')
 
+    # TODO
     def test_process_img_good_case(self):
         print(f'Executing {sys._getframe(  ).f_code.co_name}...')
 
@@ -136,6 +138,7 @@ class TestApp(unittest.TestCase):
 
         print(f'Completed {sys._getframe(  ).f_code.co_name}!')
 
+    # TODO
     def test_allowed_file(self):
         print(f'Executing {sys._getframe(  ).f_code.co_name}...')
 

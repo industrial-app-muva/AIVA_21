@@ -1,6 +1,7 @@
 import numpy as np
 import cv2 as cv
 
+
 class MotherboardExtractor:
     @staticmethod
     def __crop_rect(img, rect):

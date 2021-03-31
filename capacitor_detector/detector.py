@@ -4,9 +4,7 @@ import os
 import cv2 as cv
 from tqdm import tqdm
 
-# TODO: cambiar el path
-# TEMPLATES_PATH = 'C:/Users\europ\PycharmProjects\AIVA_21\capacitor_detector/templates'
-TEMPLATES_PATH = 'capacitor_detector/templates'
+TEMPLATES_PATH = os.path.abspath(__file__).replace("detector.py", "templates")
 
 
 class CapacitorDetector:
